@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <script async="true" data-app-id="694431590807b62fc30f1c38" data-platform-url="https://app.base44.com" src="/badge.js"></script>
+  <link rel="icon" href="/Images/logo.png">
+    <title>Get early access</title>
+</head>
+<body class="p-4">
+    <section id="header" class="p-4 flex items-center ">
+        <a href="/">
+        <div class="back bg-[#1C73E4]  w-12 h-12 rounded flex justify-center items-center text-white">
+           <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left-icon lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg>
+        </div>
+        </a>
+        <div class="img">
+            <img src="/Images/logo.png" alt="" class="w-32">
+        </div>
+    </section>
+     <section id="box" class="flex flex-col  justify-center items-center p-4 px-4 py-4 " style="">
+        <h1 class="text-[#1C73E4]"><b class="text-2xl" style="font-family: 'Clash display',sans-serif;">Get Early Access</b></h1>
+       <form action="/earlyAccess" method="POST">
+            <div class="box flex flex-col w-64 h-64 gap-4">
+            <label for="Name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" class="border border-black-200 p-4">
+            <label for="Email">Email</label>
+            <input type="text" name="email" placeholder="Enter your email" class="border border-black-200 p-4">
+            <button type="submit">Get early access</button>
+        </div>
+    </form>
+     </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
+<style>
+    *{
+        font-family: "Clash display", sans-serif;
+    }
+    button{
+        background-color:#1C73E4;
+        color: white;
+        box-shadow: 10px 10px 10px rgba(28, 115, 228, 0.638);
+        padding: 12px;
+    }
+    button:hover{
+        transition: ease-out 2s;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    input:focus{
+        outline: none;
+    }
+</style>
