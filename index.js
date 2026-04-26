@@ -1,17 +1,9 @@
 require('dotenv').config();
 const express = require("express");
-const admin = require("firebase-admin"); // Use the admin SDK
 const app = express();
 const PORT = process.env.PORT || 8888;
+const { db, auth, admin } = require("./firebase");
 
-// 1. Properly initialize Firebase
-const serviceAccount = require("./firebase-key.json");
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-});
-
-const db = admin.firestore(); // Now db has the collection() methods
 
 // middleware
 app.set("view engine", "ejs");
