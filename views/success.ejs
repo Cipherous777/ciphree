@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Transmission Received | Ciphree</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Clash Display', sans-serif; }
+    body { background-color: #050505; }
+    .bg-success-mesh {
+      background: radial-gradient(circle at center, #062d1d 0%, #050505 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(40px);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+    .fade-up { animation: fadeUp 1s ease-out forwards; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="text-white overflow-hidden bg-success-mesh">
+  <div class="relative min-h-screen flex items-center justify-center px-6">
+    <main class="max-w-xl w-full text-center z-10 fade-up">
+      <div class="glass-card p-12 md:p-20 rounded-[60px] shadow-2xl border-emerald-500/20">
+        <div class="mb-8 flex justify-center">
+          <div class="w-20 h-20 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Success</h1>
+        <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+          Your data has been successfully integrated into the Ciphree ecosystem. Our intelligence systems have logged your request.
+        </p>
+        <a href="/" class="inline-block bg-white text-black hover:bg-gray-200 px-10 py-4 rounded-full font-bold transition-all">
+          Return to HQ
+        </a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

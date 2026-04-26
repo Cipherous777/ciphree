@@ -4,12 +4,19 @@
   <meta charset="utf-8">
   <link href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" rel="icon" type="image/svg+xml">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <title><%= typeof title !== 'undefined' ? title : 'Ciphree | Augmented Intelligence & Emotional Connection' %></title>
+  <meta name="description" content="Ciphree is an augmented intelligence company building emotionally intelligent systems. Discover Moments, our minimal app for authentic emotional expression.">
+  <meta name="keywords" content="Ciphree, Moments app, Augmented Intelligence, Emotional AI, human connection, mindful tech">
+  <meta property="og:title" content="Ciphree | Intelligence That Feels Human">
+  <meta property="og:description" content="Express, reflect, and understand emotions through AI-driven resonance. Explore the Ciphree ecosystem.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
   <link href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" rel="manifest">
-  <title>Ciphree</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
-  <script async="true" data-app-id="694431590807b62fc30f1c38" data-platform-url="https://app.base44.com" src="/badge.js"></script>
-
+  
   <style>
     * { font-family: 'Clash Display', sans-serif; }
     html { scroll-behavior: smooth; }
@@ -42,78 +49,89 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div class="mx-auto max-w-7xl px-6 py-4">
         <div class="flex items-center justify-between relative">
-          <a class="flex items-center gap-2 z-10" href="/">
-            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" alt="Ciphree" class="w-10 h-10">
+          <a class="flex items-center gap-2 z-10" href="/" aria-label="Ciphree Home">
+            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" alt="Ciphree Logo" class="w-10 h-10">
             <span class="text-xl font-bold text-gray-900">Ciphree</span>
           </a>
           <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-1 bg-[#1C73E4] rounded-full p-1">
-            <a href="#home" class="nav-link px-4 py-2  text-[#1C73E4] hover:bg-white/20 rounded-full text-sm font-medium">Home</a>
-            <a href="#features" class="nav-link px-4 py-2 text-[#1C73E4] hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Features</a>
-            <a href="#faq" class="nav-link px-4 py-2 text-[#1C73E4] hover:bg-white/20 rounded-full text-sm font-medium transition-colors">FAQ</a>
-            <a href="#about" class="nav-link px-4 py-2 text-[#1C73E4] hover:bg-white/20 rounded-full text-sm font-medium transition-colors">About</a>
-            <a href="#contact" class="nav-link px-4 py-2 text-[#1C73E4] hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Contact</a>
+            <a href="#home" class="nav-link px-4 py-2 text-white hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Home</a>
+            <a href="#features" class="nav-link px-4 py-2 text-white hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Moments</a>
+            <a href="#faq" class="nav-link px-4 py-2 text-white hover:bg-white/20 rounded-full text-sm font-medium transition-colors">FAQ</a>
+            <a href="#about" class="nav-link px-4 py-2 text-white hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Mission</a>
+            <a href="#contact" class="nav-link px-4 py-2 text-white hover:bg-white/20 rounded-full text-sm font-medium transition-colors">Contact</a>
           </div>
-          <a href="/earlyAccess"><button class="hidden md:block bg-[#1C73E4] hover:bg-[#1557b8] text-white px-6 py-2 rounded-full text-sm font-medium transition-colors z-10">Get started</button></a>
-          <button id="mobile-menu-btn" class="md:hidden z-10">
+          <a href="/moments" class="hidden md:block z-10"><button class="bg-[#1C73E4] hover:bg-[#1557b8] text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">Explore Moments</button></a>
+          <button id="mobile-menu-btn" class="md:hidden z-10" aria-label="Open Menu">
             <svg class="h-8 w-8 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden mt-4 bg-[#1C73E4] rounded-2xl p-4 space-y-2">
-          <a href="#home" class="nav-link block px-4 py-3 bg-white text-[#1C73E4] rounded-full">Home</a>
-          <a href="#features" class="nav-link block px-4 py-3 text-white rounded-full">Features</a>
-          <a href="#faq" class="nav-link block px-4 py-3 text-white rounded-full">FAQ</a>
-          <a href="#about" class="nav-link block px-4 py-3 text-white rounded-full">About</a>
-          <a href="#contact" class="nav-link block px-4 py-3 text-white rounded-full">Contact</a>
-          <a href="/earlyAccess"><button class="w-full mt-4 bg-white text-[#1C73E4] py-3 rounded-full font-medium">Get started</button></a>
-        </div>
+        <div id="mobile-menu" class="md:hidden hidden mt-4 rounded-2xl p-4 space-y-2 bg-white shadow-xl border border-gray-100">
+  <a href="#home" class="nav-link block px-4 py-3 text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">Home</a>
+  <a href="#features" class="nav-link block px-4 py-3 text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">Moments</a>
+  <a href="#faq" class="nav-link block px-4 py-3 text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">FAQ</a>
+  <a href="#about" class="nav-link block px-4 py-3 text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">Mission</a>
+  <a href="#contact" class="nav-link block px-4 py-3 text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">Contact</a>
+  
+  <div class="pt-4 border-t border-gray-100">
+    <a href="/moments" class="block w-full bg-[#1C73E4] text-white py-4 rounded-xl font-bold text-center shadow-lg active:scale-95 transition-transform">
+      Explore Moments
+    </a>
+  </div>
+</div>
       </div>
     </nav>
 
     <main class="pt-20">
       <section id="home" class="relative bg-black text-white min-h-[700px] flex items-center overflow-hidden">
         <div class="absolute inset-0">
-          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/a5c4896f6_image.png" alt="Hero background" class="w-full h-full object-cover opacity-60">
-          <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/a5c4896f6_image.png" alt="Emotional Intelligence Background" class="w-full h-full object-cover opacity-40">
+          <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black/60"></div>
         </div>
         <div class="relative w-full px-6 py-20">
           <div class="max-w-4xl mx-auto text-center fade-in">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight hero-title">
-              <span>Skip</span> <span>the</span> <span>small</span> <span>talk,</span><br>
-              <span>find</span> <span class="text-[#1C73E4]">instant</span> <span>understanding.</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight hero-title">
+              <span>Building</span> <span>Intelligence</span> <span>That</span> <span class="text-[#1C73E4]">Feels</span> <span>Human.</span>
             </h1>
-            <a href="/earlyAccess"><button class="shadow bg-[#1C73E4] hover:bg-[#1557b8] text-white px-8 py-6 text-lg rounded-full pulse-btn">Get started</button></a>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+              Ciphree is an augmented intelligence company. We help people express, reflect, and understand emotions through high-fidelity AI systems.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+              <a href="/moments"><button class="shadow bg-[#1C73E4] hover:bg-[#1557b8] text-white px-10 py-6 text-lg rounded-full pulse-btn font-semibold">Explore Moments</button></a>
+              <a href="#about" class="border border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-10 py-6 text-lg rounded-full transition-all">Our Mission</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="features" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-12 fade-in">
-            <h2 class="text-5xl font-bold text-[#1C73E4] mb-4">Features</h2>
-            <p class="text-gray-900 text-xl">Features that make connection simple</p>
+          <div class="text-center mb-16 fade-in">
+            <h2 class="text-sm font-bold text-[#1C73E4] tracking-[0.2em] uppercase mb-4">First Launch</h2>
+            <h3 class="text-5xl font-bold text-gray-900 mb-6">Moments by Ciphree</h3>
+            <p class="text-gray-600 text-xl max-w-2xl mx-auto">A minimal app designed to replace algorithmic noise with meaningful emotional resonance.</p>
           </div>
           <div class="grid md:grid-cols-3 gap-8 mb-12">
-            <div class="bg-white rounded-3xl border-2 border-gray-200 p-8 feature-card fade-in">
-              <div class="text-5xl mb-6">👥</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">AI Friend Matching</h3>
-              <p class="text-gray-600 leading-relaxed">Matches you with friends based on your mood using AI, creating quick, meaningful connections.</p>
+            <div class="bg-white rounded-3xl border-2 border-gray-100 p-8 feature-card fade-in">
+              <div class="text-5xl mb-6" aria-hidden="true">✨</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Resonance Matching</h3>
+              <p class="text-gray-600 leading-relaxed">Skip the superficial bios. Connect with others based on shared emotional frequency and current perspective.</p>
             </div>
-            <div class="bg-white rounded-3xl border-2 border-gray-200 p-8 feature-card fade-in">
-              <div class="text-5xl mb-6">🎮</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">Mini-games</h3>
-              <p class="text-gray-600 leading-relaxed">Fun games to play while the AI finds your match, keeping you entertained.</p>
+            <div class="bg-white rounded-3xl border-2 border-gray-100 p-8 feature-card fade-in">
+              <div class="text-5xl mb-6" aria-hidden="true">🌀</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Emotional Reflection</h3>
+              <p class="text-gray-600 leading-relaxed">A mindful space to log "moments"—brief, honest expressions of your state, free from the pressure of likes.</p>
             </div>
-            <div class="bg-white rounded-3xl border-2 border-gray-200 p-8 feature-card fade-in">
-              <div class="text-5xl mb-6">📓</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">Journaling</h3>
-              <p class="text-gray-600 leading-relaxed">A smart journal that adapts to your emotions, offering tailored prompts and insights.</p>
+            <div class="bg-white rounded-3xl border-2 border-gray-100 p-8 feature-card fade-in">
+              <div class="text-5xl mb-6" aria-hidden="true">🌿</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Focus & Clarity</h3>
+              <p class="text-gray-600 leading-relaxed">A distraction-free environment. No endless scrolling—just pure, intentional human connection.</p>
             </div>
           </div>
           <div class="text-center fade-in">
-            <p class="text-[#1C73E4] font-medium text-lg mb-8">Anonymity controls • Safe matching filters • Lightweight profiles • Simple reporting tools</p>
-            <button class="shadow bg-[#1C73E4] hover:bg-[#1557b8] text-white px-8 py-4 text-lg rounded-full">Try matching</button>
+            <p class="text-gray-500 font-medium text-lg mb-8">Zero-Ad Policy • Privacy-Preserving AI • Authentic Expression</p>
+            <a href="#contact" class="inline-block shadow bg-[#1C73E4] hover:bg-[#1557b8] text-white px-8 py-4 text-lg rounded-full font-medium transition-all">Get Early Access to Moments</a>
           </div>
         </div>
       </section>
@@ -121,65 +139,30 @@
       <section id="faq" class="py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-6">
           <div class="text-center mb-16 fade-in">
-            <h2 class="text-4xl md:text-5xl font-bold text-[#1C73E4] mb-4">FREQUENTLY ASKED QUESTIONS (FAQ)</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-[#1C73E4] mb-4">Understanding Ciphree</h2>
           </div>
           <div class="space-y-4">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
-              <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
-                <span class="text-lg font-semibold text-gray-900 pr-4">Is Ciphree free?</span>
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#1C73E4] flex items-center justify-center rotate-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-5 h-5 text-white">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5v14"></path>
-                  </svg>
+            <% const faqs = [
+              { q: 'What is "Augmented Intelligence"?', a: 'We don\'t replace human intelligence; we augment it. Our systems enhance your emotional clarity, using AI to bridge communication gaps often created by traditional tech.' },
+              { q: 'How does the AI handle my emotions?', a: 'We use proprietary emotional modeling to understand nuance. This data is used exclusively to help you reflect or find resonance—never for targeted advertising.' },
+              { q: 'Is "Moments" a social network?', a: '"Moments" is an anti-social platform. It removes the competitive nature of followers and feeds, focusing entirely on shared vulnerability and presence.' }
+            ]; %>
+            <% faqs.forEach((faq, index) => { %>
+              <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
+                <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+                  <span class="text-lg font-semibold text-gray-900 pr-4"><%= faq.q %></span>
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#1C73E4] flex items-center justify-center rotate-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5v14"></path>
+                    </svg>
+                  </div>
+                </button>
+                <div class="faq-content px-6 text-gray-600">
+                  <p class="p-6"><%= faq.a %></p>
                 </div>
-              </button>
-              <div class="faq-content px-6 text-gray-600">
-                <p class="p-6">Yes, Ciphree has a free version with core features for meaningful connections. You can upgrade anytime to unlock additional features, but the free version is fully functional if you'd like to keep using it. </p>
               </div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
-              <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
-                <span class="text-lg font-semibold text-gray-900 pr-4">How does Ciphree really work?</span>
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#1C73E4] flex items-center justify-center rotate-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-5 h-5 text-white">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5v14"></path>
-                  </svg>
-                </div>
-              </button>
-              <div class="faq-content px-6 text-gray-600">
-                <p class="p-6">We use advanced emotional AI to understand your current mood from short inputs or journaling. Then we match you anonymously with others feeling similarly, prioritizing emotional compatibility over superficial traits.</p>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
-              <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
-                <span class="text-lg font-semibold text-gray-900 pr-4">Does Ciphree only focus on A & B groups?</span>
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#1C73E4] flex items-center justify-center rotate-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-5 h-5 text-white">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5v14"></path>
-                  </svg>
-                </div>
-              </button>
-              <div class="faq-content px-6 text-gray-600">
-                <p class="p-6">Ciphree is for everyone seeking meaningful connection. Our platform is designed with neurodivergent experiences at its core, creating a space that welcomes all identities and focuses purely on emotional alignment.</p>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden fade-in">
-              <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
-                <span class="text-lg font-semibold text-gray-900 pr-4">What if I don't get the friends I want?</span>
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#1C73E4] flex items-center justify-center rotate-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-5 h-5 text-white">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5v14"></path>
-                  </svg>
-                </div>
-              </button>
-              <div class="faq-content px-6 text-gray-600">
-                <p class="p-6">You can rematch instantly. Our system learns from your feedback to improve future connections, and you're always in control of your anonymity and conversation pace. If a match doesn't work out, features like games and Journals make sure the process is still enjoyable.</p>
-              </div>
-            </div>
+            <% }); %>
           </div>
         </div>
       </section>
@@ -187,39 +170,35 @@
       <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
           <div class="text-center mb-16 fade-in">
-            <h2 class="text-5xl font-bold text-[#1C73E4] mb-6">ABOUT US</h2>
+            <h2 class="text-5xl font-bold text-[#1C73E4] mb-6">Our Mission</h2>
           </div>
           <div class="grid md:grid-cols-3 gap-8 mb-16">
             <div class="text-center fade-in">
-              <div class="text-2xl font-bold text-gray-900 mb-2">Coming soon</div>
-              <div class="text-gray-600">Launch </div>
+              <div class="text-2xl font-bold text-gray-900 mb-2">2026</div>
+              <div class="text-gray-600">Future-Ready</div>
             </div>
             <div class="text-center fade-in">
-              <div class="text-2xl font-bold text-gray-900 mb-2">26</div>
-              <div class="text-gray-600">Newsletter</div>
+              <div class="text-2xl font-bold text-gray-900 mb-2">100%</div>
+              <div class="text-gray-600">Human-Centered</div>
             </div>
             <div class="text-center fade-in">
-              <div class="text-2xl font-bold text-gray-900 mb-2">26</div>
-              <div class="text-gray-600">Users</div>
+              <div class="text-2xl font-bold text-gray-900 mb-2">Ethical</div>
+              <div class="text-gray-600">AI Framework</div>
             </div>
           </div>
           <div class="max-w-3xl mx-auto fade-in">
-            <div class="text-gray-900 text-lg mb-8 ">
+            <div class="text-gray-900 text-lg mb-8">
               <div class="text-gray-400">
-                <p class="typing-wrapper"> <b class="text-black"> Helping people  </b>- form meaningful friendships through Artificial Intelligence and safe design.</p>
+                <p class="typing-wrapper"><b class="text-black">Redefining digital intimacy</b> - through ethical AI and intentional architecture.</p>
               </div>
             </div>
-            <div class="mb-8">
-              <h3 class="text-[#1C73E4] text-2xl font-bold mb-4">Mission</h3>
-              <p class="text-gray-900 leading-relaxed">To make meaningful human connection easier and kinder. We combine emotional AI and simple, privacy-centric UX to help people find friends who get them.</p>
+            <div class="mb-12">
+              <h3 class="text-[#1C73E4] text-2xl font-bold mb-4">The Vision</h3>
+              <p class="text-gray-900 text-xl leading-relaxed">Ciphree builds infrastructure for a future where technology serves our emotional well-being rather than exploiting it. We bridge the gap between human feeling and digital interaction.</p>
             </div>
-            <div class="mb-8">
-              <h3 class="text-[#1C73E4] text-2xl font-bold mb-4">Our story</h3>
-              <p class="text-gray-900 leading-relaxed mb-4">Ciphree started because connection felt harder than it should be. We built a matching system that listens to how you feel — not just what you like — and emphasizes safety, consent, and emotional fit.</p>
-            </div>
-            <div>
-              <h3 class="text-[#1C73E4] text-2xl font-bold mb-4">Values</h3>
-              <p class="text-gray-900">Empathy · Privacy · Simplicity · Community</p>
+            <div class="mb-12">
+              <h3 class="text-[#1C73E4] text-2xl font-bold mb-4">Safe & Human</h3>
+              <p class="text-gray-900 leading-relaxed mb-4">We prioritize safety and emotional fit. Our systems are inclusive of neurodivergent experiences, creating a space where every "moment" is valid and understood.</p>
             </div>
           </div>
         </div>
@@ -228,67 +207,53 @@
       <section id="contact" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-6">
           <div class="text-center mb-16 fade-in">
-            <h2 class="text-5xl font-bold text-[#1C73E4] mb-6">CONTACT</h2>
+            <h2 class="text-5xl font-bold text-[#1C73E4] mb-6">Connect With Us</h2>
+            <p class="text-gray-600">Share your thoughts or request early access to the Ciphree ecosystem.</p>
           </div>
           <div class="grid md:grid-cols-2 gap-12 items-start">
             <div class="fade-in">
-              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/b60ab0687_image.png" alt="Contact" class="w-full object-cover rounded-3xl max-h-[500px]">
+              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/b60ab0687_image.png" alt="Contact Ciphree" class="w-full object-cover rounded-3xl max-h-[500px] shadow-lg">
             </div>
             <div class="fade-in">
               <div class="mb-8">
                 <div class="grid grid-cols-2 gap-8 mb-8">
                   <div>
                     <h3 class="text-[#1C73E4] text-xl font-bold mb-2">E-mail</h3>
-                    <p class="text-gray-900">example@gmail.com</p>
+                    <p class="text-gray-900"><%= typeof email !== 'undefined' ? email : 'hello@ciphree.com' %></p>
                   </div>
                   <div>
-                    <h3 class="text-[#1C73E4] text-xl font-bold mb-2">Phone</h3>
-                    <p class="text-gray-900">+09820934890</p>
+                    <h3 class="text-[#1C73E4] text-xl font-bold mb-2">Follow</h3>
+                    <p class="text-gray-900">@Ciphreedotcom</p>
                   </div>
                 </div>
               </div>
-              <form class="space-y-4">
-                <input class="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-base" placeholder="Name" required>
-                <input type="email" class="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-base" placeholder="E-mail" required>
-                <textarea class="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-base resize-none" placeholder="Message" rows="6" required></textarea>
-                <button type="submit" class="w-full bg-[#1C73E4] hover:bg-[#1557b8] text-white py-6 text-lg rounded-full font-medium transition-colors">
-                  Send a message
+              <form class="space-y-4" action="/contact" method="POST">
+                <input name="name" class="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-base focus:ring-2 focus:ring-[#1C73E4] outline-none" placeholder="Name" required>
+                <input name="email" type="email" class="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-base focus:ring-2 focus:ring-[#1C73E4] outline-none" placeholder="Email" required>
+                <textarea name="message" class="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-base resize-none focus:ring-2 focus:ring-[#1C73E4] outline-none" placeholder="How can we build a more emotionally intelligent future together?" rows="5" required></textarea>
+                <button type="submit" class="w-full bg-[#1C73E4] hover:bg-[#1557b8] text-white py-6 text-lg rounded-full font-medium transition-all">
+                  Send Message
                 </button>
               </form>
-              <div class="mt-8 flex items-center justify-center gap-12">
-                <a href="https://x.com/Ciphreedotcom">
-                <div class="text-center">
-                  <svg class="w-8 h-8 mx-auto mb-2" fill="#1C73E4" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-                  <p class="text-gray-900 text-sm">@Ciphreedotcome</p>
-                </div>
-                </a>
-                <a href="https://www.instagram.com/ciphree_/">
-                <div class="text-center">
-                  <svg class="w-8 h-8 mx-auto mb-2" fill="#1C73E4" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-                  <p class="text-gray-900 text-sm">@Ciphreedotcome</p>
-                </div>
-                </a>
-                <a href="https://www.youtube.com/@emotewavee">
-                <div class="text-center">
-                  <svg class="w-8 h-8 mx-auto mb-2" fill="#1C73E4" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                  <p class="text-[#1C73E4] font-bold text-sm">@emotewavee</p>
-                </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-gray-200 py-8 mt-20">
+    <footer class="border-t border-gray-100 py-12 mt-20">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-2">
             <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" alt="Ciphree" class="w-8 h-8">
-            <span class="text-gray-600 font-medium">Ciphree</span>
+            <span class="text-gray-900 font-bold">Ciphree</span>
           </div>
-          <p class="text-gray-500 text-sm">© 2025 Ciphree. All rights reserved.</p>
+          <div class="flex gap-8 text-sm text-gray-500">
+            <a href="#about" class="hover:text-[#1C73E4]">Our Vision</a>
+            <a href="#" class="hover:text-[#1C73E4]">Privacy</a>
+            <a href="#" class="hover:text-[#1C73E4]">Ethics</a>
+          </div>
+          <p class="text-gray-500 text-sm">© <%= new Date().getFullYear() %> Ciphree. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -307,7 +272,7 @@
           if (typewriter) typewriter.classList.remove('animate');
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
     document.querySelectorAll('.accordion-toggle').forEach(button => {
@@ -325,9 +290,19 @@
       });
     });
 
-    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
+   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('#mobile-menu .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+});
 
     window.addEventListener('scroll', () => {
       let current = '';
@@ -335,8 +310,8 @@
         if (window.scrollY >= section.offsetTop - 150) current = section.getAttribute('id');
       });
       document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('bg-white', 'text-[#1C73E4]');
-        if (link.getAttribute('href') === `#${current}`) link.classList.add('bg-white', 'text-[#1C73E4]');
+        link.classList.remove('bg-white/20', 'bg-[#1C73E4]');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('bg-white/20');
       });
     });
   </script>

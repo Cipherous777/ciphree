@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Moments | Ciphree Intelligence</title>
+  <meta name="description" content="Moments by Ciphree is currently under construction. A new era of emotional resonance is coming soon.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { font-family: 'Clash Display', sans-serif; }
+    body { background-color: #050505; }
+    .bg-dark-mesh {
+      background: radial-gradient(circle at top right, #111 0%, #050505 100%);
+    }
+    .glass-dark {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    @keyframes slow-pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.1); }
+    }
+    .accent-glow {
+      animation: slow-pulse 8s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="text-white overflow-hidden bg-dark-mesh">
+  <div class="relative min-h-screen flex items-center justify-center px-6">
+    
+    <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-[#1C73E4] rounded-full blur-[160px] opacity-10 accent-glow"></div>
+    <div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-white rounded-full blur-[140px] opacity-5 accent-glow" style="animation-delay: -3s;"></div>
+
+    <main class="max-w-xl w-full text-center z-10">
+      <header class="mb-12">
+        <a href="/" class="inline-block group">
+          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694431590807b62fc30f1c38/82ce8b60c_image.png" 
+               alt="Ciphree Logo" class="w-12 h-12 mx-auto mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+        </a>
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-2">Moments</h1>
+        <p class="text-[#1C73E4] font-medium tracking-[0.3em] uppercase text-xs">By Ciphree Intelligence</p>
+      </header>
+
+      <div class="glass-dark p-10 md:p-14 rounded-[48px] shadow-2xl relative overflow-hidden">
+        <div class="mb-8 flex items-center justify-center gap-3">
+          <span class="flex h-2 w-2 rounded-full bg-[#1C73E4] shadow-[0_0_10px_#1C73E4]"></span>
+          <span class="text-xs font-semibold tracking-widest text-gray-500 uppercase">Under Construction</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6 leading-tight">
+          A space for resonance is being engineered
+        </h2>
+        
+        <p class="text-gray-400 text-base leading-relaxed mb-10">
+          We are refining the architecture for our first release. Moments is designed to bridge the gap between digital interaction and true human feeling. 
+        </p>
+        
+        <div class="flex flex-col gap-6">
+          <a href="/" class="text-gray-400 hover:text-white transition-all flex items-center justify-center gap-2 group text-sm font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:-translate-x-1 transition-transform">
+              <path d="m15 18-6-6 6-6"/>
+            </svg>
+            Return to HQ
+          </a>
+        </div>
+      </div>
+
+      <footer class="mt-16">
+        <p class="text-gray-700 text-xs tracking-widest uppercase">
+          Digital Intimacy 2026
+        </p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
