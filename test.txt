@@ -1,5 +1,0 @@
-I forgot the following
-- making collection string
-- require spelling
-- Date is always function
-- urelendcoded, extended true true 

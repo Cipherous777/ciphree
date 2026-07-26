@@ -1,6 +1,0 @@
-# Ignore Firebase credentials
-firebase-key.json
-
-# Other common ignores (optional but recommended)
-node_modules/
-.env
